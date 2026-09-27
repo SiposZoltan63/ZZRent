@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
     background-image: url("../img/background.jpg");
-    background-size: 100% 100vh;
-    background-position: top center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 .felso {
@@ -17,9 +18,10 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     text-align: center;
     padding: 15px 10px;
-    width: 85%;
+    width: 90%;
     max-width: 1000px;
-    margin: 30px auto 10px auto; 
+    margin: 20px auto 10px auto; 
+    box-sizing: border-box;
 }
 
 #logo {
@@ -57,9 +59,14 @@ body {
 }
 
 .tartalom {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
     width: 90%;
-    max-width: 300px;
-    padding-top: 25px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-top: 25px;
+    box-sizing: border-box;
 }
