@@ -70,3 +70,6 @@ body {
     padding-top: 25px;
     box-sizing: border-box;
 }
+#authModal * {
+    color: black !important;
+}
