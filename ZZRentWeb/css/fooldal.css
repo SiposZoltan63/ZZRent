@@ -3,7 +3,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-image: url("../img/background.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,50 +14,32 @@ body {
 
 .felso {
     background-color: rgba(51, 51, 51, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    text-align: center;
-    padding: 15px 10px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto 10px auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    width: calc(100% - 80px);
+    margin: 0px 0px 0px 40px;
     box-sizing: border-box;
 }
 
 #logo {
     border-radius: 5px;
     border: 3px solid darkblue;
-    max-width: 100px;
-    width: 20%;
-    min-width: 50px;
+    max-width: 90px;
     height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
 }
 
 .search-box {
-    padding: 10px;
-    width: 60%;
     max-width: 400px;
     border-radius: 5px;
     border: 2px solid darkblue;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
 }
 
 #loginbutton {
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
+    white-space: nowrap;
 }
 
-.card-title {
-    text-align: center;
-}
-
+/* Kártyák tárolója */
 .tartalom {
     display: flex;
     flex-wrap: wrap;
@@ -67,9 +49,23 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding: 25px 0;
     box-sizing: border-box;
 }
+
+.car-card {
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-title {
+    text-align: center;
+}
+
 #authModal * {
     color: black !important;
+}
+
+#authModal .nav-link.active {
+    color: #0d6efd !important;
 }
